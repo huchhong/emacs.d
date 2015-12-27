@@ -21,4 +21,7 @@
 (window-numbering-mode 1)
 ;; }}
 
+;; disable menu bar
+(menu-bar-mode -1)
+
 (provide 'init-misc)
