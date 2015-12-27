@@ -51,7 +51,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-themes)
+(require 'init-color-theme)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-dired)
@@ -66,7 +66,7 @@
 (require 'init-hippie-expand)
 (require 'init-auto-complete)
 (require 'init-windows)
-(require 'init-sessions)
+;;(require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
 
