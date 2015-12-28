@@ -112,6 +112,8 @@
 
 (require 'init-misc)
 
+(require 'init-ggtags)
+
 (require 'init-dash)
 (require 'init-ledger)
 ;; Extra packages which don't require any configuration
