@@ -162,6 +162,10 @@
 (global-unset-key [M-left])
 (global-unset-key [M-right])
 
+(global-set-key (kbd "C-c C-s") 'save-buffer)
+
+(global-set-key (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
+(global-set-key (kbd "C-c C-k") 'delete-window)
 
 
 (defun kill-back-to-indentation ()
