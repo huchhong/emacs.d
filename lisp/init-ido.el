@@ -1,10 +1,18 @@
 ;; Use C-f during file selection to switch to regular find-file
+
+(require-package 'flx-ido)
+(require 'flx-ido)
 (ido-mode t)
+(flx-ido-mode 1)
 (ido-everywhere t)
 (setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
 (setq ido-use-filename-at-point nil)
 (setq ido-auto-merge-work-directories-length 0)
 (setq ido-use-virtual-buffers t)
+
+;; @see https://github.com/lewang/flx
+(setq flx-ido-threshold 10000)
 
 (when (maybe-require-package 'ido-ubiquitous)
   (ido-ubiquitous-mode t))
