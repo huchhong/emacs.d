@@ -163,6 +163,7 @@
 (global-unset-key [M-right])
 
 (global-set-key (kbd "C-c C-s") 'save-buffer)
+(global-set-key (kbd "C-c s") 'save-buffer)
 
 (global-set-key (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
 (global-set-key (kbd "C-c C-k") 'delete-window)
