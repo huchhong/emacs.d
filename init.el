@@ -114,6 +114,7 @@
 (require 'init-misc)
 
 (require 'init-ggtags)
+(require 'init-scroll)
 
 (require 'init-dash)
 (require 'init-ledger)
