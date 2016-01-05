@@ -115,6 +115,7 @@
 
 (require 'init-ggtags)
 (require 'init-scroll)
+(require 'init-yasnippet)
 
 (require 'init-dash)
 (require 'init-ledger)
