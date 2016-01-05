@@ -1,3 +1,4 @@
+(require-package 'swiper)
 (require-package 'find-file-in-project)
 
 ;; {{ find-file-in-project (ffip)
