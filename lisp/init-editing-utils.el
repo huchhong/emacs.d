@@ -170,6 +170,9 @@
 (add-hook 'grep-setup-hook
           (lambda()
             (define-key grep-mode-map (kbd "C-c C-k") 'delete-window)))
+(add-hook 'python-mode-hook
+          (lambda()
+            (define-key python-mode-map (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)))
 
 (defun kill-back-to-indentation ()
   "Kill from point back to the first non-whitespace character on the line."
