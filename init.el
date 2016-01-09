@@ -117,6 +117,7 @@
 (require 'init-scroll)
 (require 'init-yasnippet)
 (require 'init-ffip)
+(require 'init-ivy)
 
 (require 'init-dash)
 (require 'init-ledger)
