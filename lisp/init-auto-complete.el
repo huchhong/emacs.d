@@ -1,4 +1,5 @@
 (require-package 'auto-complete)
+
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
 (setq-default ac-expand-on-auto-complete nil)
@@ -44,15 +45,14 @@
                ac-source-words-in-all-buffer))
 
 (dolist (mode '(log-edit-mode org-mode text-mode haml-mode
-                git-commit-mode
-                sass-mode yaml-mode csv-mode espresso-mode haskell-mode
-                html-mode nxml-mode sh-mode smarty-mode clojure-mode
-                lisp-mode textile-mode markdown-mode tuareg-mode
-                js3-mode css-mode less-css-mode sql-mode
-                sql-interactive-mode
-                inferior-emacs-lisp-mode))
+							  git-commit-mode
+							  sass-mode yaml-mode csv-mode espresso-mode haskell-mode
+							  html-mode nxml-mode sh-mode smarty-mode clojure-mode
+							  lisp-mode textile-mode markdown-mode tuareg-mode
+							  js3-mode css-mode less-css-mode sql-mode
+							  sql-interactive-mode
+							  inferior-emacs-lisp-mode))
   (add-to-list 'ac-modes mode))
-
 
 ;; Exclude very large buffers from dabbrev
 (defun sanityinc/dabbrev-friend-buffer (other-buffer)
@@ -60,5 +60,7 @@
 
 (setq dabbrev-friend-buffer-function 'sanityinc/dabbrev-friend-buffer)
 
+(ac-set-trigger-key "TAB")
+(ac-set-trigger-key "<tab>")
 
 (provide 'init-auto-complete)
