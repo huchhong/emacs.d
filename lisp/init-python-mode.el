@@ -5,14 +5,19 @@
 
 (require-package 'pip-requirements)
 
-;; auto complete
-(require-package 'jedi)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+(require-package 'company)
+(require-package 'elpy)
 
-;; Type:
-;;     M-x package-install RET jedi RET
-;;     M-x jedi:install-server RET
-;; Then open Python file.
+
+(defun python-mode-hook-setup ()
+  ;; run command `pip install jedi flake8 importmagic autopep8 yapf` in shell,
+  ;; or just check https://github.com/jorgenschaefer/elpy
+  (elpy-mode 1)
+  ;; http://emacs.stackexchange.com/questions/3322/python-auto-indent-problem/3338#3338
+  ;; emacs 24.4 only
+  (setq electric-indent-chars (delq ?: electric-indent-chars))
+  )
+
+(add-hook 'python-mode-hook 'python-mode-hook-setup)
 
 (provide 'init-python-mode)
