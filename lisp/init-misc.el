@@ -28,4 +28,9 @@
 ;; disable menu bar
 (menu-bar-mode -1)
 
+(defun my-overview-of-current-buffer ()
+  (interactive)
+  (set-selective-display (if selective-display nil 1)))
+
+
 (provide 'init-misc)
