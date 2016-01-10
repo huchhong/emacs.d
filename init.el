@@ -113,6 +113,7 @@
 
 (require 'init-misc)
 
+(require 'init-semantic)
 (require 'init-ggtags)
 (require 'init-cscope)
 (require 'init-scroll)

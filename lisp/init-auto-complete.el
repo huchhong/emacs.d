@@ -38,13 +38,12 @@
 
 
 (set-default 'ac-sources
-             '(ac-source-semantic
-			   ac-source-imenu
+             '(ac-source-imenu
 			   ac-source-gtags
-               ac-source-dictionary
-               ac-source-words-in-buffer
-               ac-source-words-in-same-mode-buffers
-               ac-source-words-in-all-buffer))
+			   ac-source-dictionary
+			   ac-source-words-in-buffer
+			   ac-source-words-in-same-mode-buffers
+			   ac-source-words-in-all-buffer))
 
 (dolist (mode '(log-edit-mode org-mode text-mode haml-mode
 							  git-commit-mode
