@@ -114,6 +114,7 @@
 (require 'init-misc)
 
 (require 'init-ggtags)
+(require 'init-cscope)
 (require 'init-scroll)
 (require 'init-yasnippet)
 (require 'init-ffip)
