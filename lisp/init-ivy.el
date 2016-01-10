@@ -148,16 +148,4 @@ Or else, find files since 24 weeks (6 months) ago."
 
 (autoload 'ivy-read "ivy")
 
-(defun ivy-imenu-goto ()
-  "Go to buffer position"
-  (interactive)
-  (let ((imenu-auto-rescan t) items)
-    (unless (featurep 'imenu)
-      (require 'imenu nil t))
-    (setq items (imenu--make-index-alist t))
-    (ivy-read "imenu items:"
-              (ivy-imenu-get-candidates-from (delete (assoc "*Rescan*" items) items))
-              :action (lambda (k) (goto-char k)))))
-
-
 (provide 'init-ivy)
