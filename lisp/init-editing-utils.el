@@ -162,9 +162,6 @@
 (global-unset-key [M-left])
 (global-unset-key [M-right])
 
-(global-set-key (kbd "C-c C-s") 'save-buffer)
-(global-set-key (kbd "C-c s") 'save-buffer)
-
 ;; bind more convenient keys to delete other windows and delete window
 (global-set-key (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
 (global-set-key (kbd "C-c C-k") 'delete-window)
@@ -174,11 +171,11 @@
 (add-hook 'python-mode-hook
           (lambda()
             (define-key python-mode-map (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
-			(define-key python-mode-map (kbd "C-c C-s") 'save-buffer)))
+			))
 (add-hook 'c-initialization-hook
 		  (lambda()
             (define-key c-mode-base-map (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
-			(define-key c-mode-base-map (kbd "C-c C-s") 'save-buffer)))
+			))
 
 (defun kill-back-to-indentation ()
   "Kill from point back to the first non-whitespace character on the line."
