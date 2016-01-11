@@ -162,9 +162,6 @@
 (global-unset-key [M-left])
 (global-unset-key [M-right])
 
-;; bind more convenient keys to save-buffer
-(global-set-key (kbd "C-c C-s") 'save-buffer)
-
 ;; bind more convenient keys to delete other windows and delete window
 (global-set-key (kbd "C-c C-l") 'sanityinc/toggle-delete-other-windows)
 (global-set-key (kbd "C-c C-k") 'delete-window)
