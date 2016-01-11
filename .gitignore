@@ -43,3 +43,4 @@ site-lisp/package/
 /.python-environments/
 /saveplace
 /irony
+/semanticdb
