@@ -86,6 +86,7 @@
 			(add-to-list 'ac-sources 'ac-source-semantic)))
 
 (define-key semantic-mode-map (kbd "C-c , s") 'semantic-ia-show-summary)
+(define-key semantic-mode-map (kbd "C-c C-j") 'helm-semantic-or-imenu)
 
 (global-ede-mode 1)
 
