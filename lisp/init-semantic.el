@@ -9,7 +9,7 @@
 (global-ede-mode 1)
 
 ;; set custom project
-(ede-cpp-root-project "qemu" :file "~/qemu/vl.c"
-					  :include-path '("/include"))
+;; (ede-cpp-root-project "qemu" :file "~/qemu/vl.c"
+;;					  :include-path '("/include"))
 
 (provide 'init-semantic)
