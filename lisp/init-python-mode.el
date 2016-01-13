@@ -16,6 +16,7 @@
   ;; http://emacs.stackexchange.com/questions/3322/python-auto-indent-problem/3338#3338
   ;; emacs 24.4 only
   (setq electric-indent-chars (delq ?: electric-indent-chars))
+  (define-key python-mode-map (kbd "M-,") 'pop-tag-mark)
   )
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
