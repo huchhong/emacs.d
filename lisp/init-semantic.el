@@ -1,5 +1,3 @@
-(semantic-mode 1)
-
 (defvar semantic-tags-location-ring (make-ring 20))
 
 (defun semantic-goto-definition (point)
@@ -28,9 +26,6 @@
 		(switch-to-buffer buff)
 		(goto-char pos))
 	  (set-marker marker nil nil))))
-
-(global-set-key (kbd "C-]") 'semantic-goto-definition)
-(global-set-key (kbd "C-t") 'semantic-pop-tag-mark)
 
 (defvar c-files-regex ".*\\.\\(c\\|cpp\\|cc\\|h\\|hpp\\)"
   "A regular expression to match any c/c++ related files under a directory")
@@ -83,14 +78,18 @@
 
 (add-hook 'c-mode-common-hook
 		  (lambda ()
-			(add-to-list 'ac-sources 'ac-source-semantic)))
+			(add-to-list 'ac-sources 'ac-source-semantic)
+			(semantic-mode 1)
+			(global-ede-mode 1)
+			(define-key semantic-mode-map (kbd "C-]") 'semantic-goto-definition)
+			(define-key semantic-mode-map (kbd "C-t") 'semantic-pop-tag-mark)
+			))
 
 (add-hook 'c-initialization-hook
 		  (lambda()
 			(define-key c-mode-base-map (kbd "C-c C-s") 'semantic-ia-show-summary)
 			))
 
-(global-ede-mode 1)
 
 ;; set custom project. Put following code to custom.el.
 ;; (ede-cpp-root-project "qemu" :file "~/qemu/vl.c"
