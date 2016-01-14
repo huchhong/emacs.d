@@ -32,7 +32,7 @@
 (global-set-key (kbd "C-]") 'semantic-goto-definition)
 (global-set-key (kbd "C-t") 'semantic-pop-tag-mark)
 
-(defvar c-files-regex ".*\\.\\(c\\|cpp\\|h\\|hpp\\)"
+(defvar c-files-regex ".*\\.\\(c\\|cpp\\|cc\\|h\\|hpp\\)"
   "A regular expression to match any c/c++ related files under a directory")
 
 (defun my-semantic-parse-dir (root regex)
