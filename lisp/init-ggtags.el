@@ -7,8 +7,9 @@
 ;; customize
 (custom-set-variables
  '(helm-gtags-path-style 'relative)
- '(helm-gtags-ignore-case t)
  '(helm-gtags-auto-update t))
+
+
 
 (eval-after-load "helm-gtags"
   '(progn
