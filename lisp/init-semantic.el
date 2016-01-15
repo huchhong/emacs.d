@@ -85,8 +85,10 @@
 		  (lambda ()
 			(add-to-list 'ac-sources 'ac-source-semantic)))
 
-(define-key semantic-mode-map (kbd "C-c , s") 'semantic-ia-show-summary)
-(define-key semantic-mode-map (kbd "C-c C-j") 'helm-semantic-or-imenu)
+(add-hook 'c-initialization-hook
+		  (lambda()
+			(define-key c-mode-base-map (kbd "C-c C-s") 'semantic-ia-show-summary)
+			))
 
 (global-ede-mode 1)
 
