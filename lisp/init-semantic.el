@@ -80,7 +80,6 @@
 		  (lambda ()
 			(add-to-list 'ac-sources 'ac-source-semantic)
 			(semantic-mode 1)
-			(global-ede-mode 1)
 			(define-key semantic-mode-map (kbd "C-]") 'semantic-goto-definition)
 			(define-key semantic-mode-map (kbd "C-t") 'semantic-pop-tag-mark)
 			))
@@ -90,6 +89,7 @@
 			(define-key c-mode-base-map (kbd "C-c C-s") 'semantic-ia-show-summary)
 			))
 
+(global-ede-mode 1)
 
 ;; set custom project. Put following code to custom.el.
 ;; (ede-cpp-root-project "qemu" :file "~/qemu/vl.c"
