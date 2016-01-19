@@ -99,6 +99,7 @@
 (require 'init-ruby-mode)
 (require 'init-rails)
 (require 'init-sql)
+(require 'init-cmake)
 
 (require 'init-paredit)
 (require 'init-lisp)
