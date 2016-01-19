@@ -161,6 +161,13 @@
 ;;----------------------------------------------------------------------------
 (require 'init-locales)
 
+;;----------------------------------------------------------------------------
+;; show a text mode buffer after emacs startup
+;;----------------------------------------------------------------------------
+(setq initial-scratch-message "")
+(setq initial-major-mode 'text-mode)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
 (add-hook 'after-init-hook
           (lambda ()
             (message "init completed in %.2fms"
