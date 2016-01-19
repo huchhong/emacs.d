@@ -166,15 +166,6 @@
             (message "init completed in %.2fms"
                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
-;;----------------------------------------------------------------------------
-;; show bookmark after emacs startup
-;;----------------------------------------------------------------------------
-(setq inhibit-splash-screen t)
-(require 'bookmark)
-(bookmark-bmenu-list)
-(switch-to-buffer "*Bookmark List*")
-
-
 (provide 'init)
 
 ;; Local Variables:
