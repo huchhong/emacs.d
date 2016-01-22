@@ -18,3 +18,6 @@ semantic也开始对那个文件进行解析。这样以后semantic就可以解�
 
 ### python的配置
 elpy。没什么多说的。
+
+### html
+偶尔需要做一些web的简单编程，觉得web-mode不错。
