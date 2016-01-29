@@ -17,6 +17,7 @@
   ;; emacs 24.4 only
   (setq electric-indent-chars (delq ?: electric-indent-chars))
   (define-key python-mode-map (kbd "M-,") 'pop-tag-mark)
+  (setq python-shell-interpreter "ipython")
   )
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
