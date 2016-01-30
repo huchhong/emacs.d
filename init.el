@@ -155,11 +155,16 @@
   (error "Please move init-local.el to ~/.emacs.d/lisp"))
 (require 'init-local nil t)
 
-
 ;;----------------------------------------------------------------------------
 ;; Locales (setting them earlier in this file doesn't work in X)
 ;;----------------------------------------------------------------------------
 (require 'init-locales)
+
+;;----------------------------------------------------------------------------
+;; Font setting
+;;----------------------------------------------------------------------------
+(set-face-attribute 'default nil :height 140)
+
 
 ;;----------------------------------------------------------------------------
 ;; show a text mode buffer after emacs startup
