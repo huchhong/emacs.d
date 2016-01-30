@@ -63,6 +63,7 @@
 (global-undo-tree-mode)
 (diminish 'undo-tree-mode)
 (global-set-key (kbd "M--") 'undo-tree-redo)
+(global-set-key (kbd "C--") 'undo-tree-undo)
 
 
 (require-package 'highlight-symbol)
