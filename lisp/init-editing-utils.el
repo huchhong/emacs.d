@@ -145,6 +145,7 @@
 (global-set-key (kbd "C-2") 'set-mark-command)
 
 (global-set-key (kbd "M-q") 'switch-to-buffer)
+(global-set-key (kbd "M-r") 'whole-line-or-region-yank)
 
 (when (maybe-require-package 'avy)
   (autoload 'avy-goto-word-or-subword-1 "avy")
