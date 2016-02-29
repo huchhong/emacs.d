@@ -144,10 +144,9 @@
 (global-set-key (kbd "C-x C-.") 'pop-global-mark)
 (global-set-key (kbd "C-2") 'set-mark-command)
 
-(global-set-key (kbd "M-q") 'switch-to-buffer)
-(global-set-key (kbd "M-r") 'whole-line-or-region-yank)
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-f") 'isearch-forward)
+(global-set-key (kbd "C-b") 'switch-to-buffer)
 
 (when (maybe-require-package 'avy)
   (autoload 'avy-goto-word-or-subword-1 "avy")
