@@ -146,6 +146,8 @@
 
 (global-set-key (kbd "M-q") 'switch-to-buffer)
 (global-set-key (kbd "M-r") 'whole-line-or-region-yank)
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-f") 'isearch-forward)
 
 (when (maybe-require-package 'avy)
   (autoload 'avy-goto-word-or-subword-1 "avy")
