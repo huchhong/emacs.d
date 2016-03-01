@@ -67,7 +67,7 @@
 
 
 (require-package 'highlight-symbol)
-(dolist (hook '(prog-mode-hook html-mode-hook css-mode-hook))
+(dolist (hook '(prog-mode-hook html-mode-hook css-mode-hook text-mode-hook))
   (add-hook hook 'highlight-symbol-mode)
   (add-hook hook 'highlight-symbol-nav-mode))
 (add-hook 'org-mode-hook 'highlight-symbol-nav-mode)
@@ -146,6 +146,7 @@
 
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-f") 'isearch-forward)
+(define-key isearch-mode-map "\C-f" 'isearch-repeat-forward)
 (global-set-key (kbd "C-b") 'switch-to-buffer)
 
 (when (maybe-require-package 'avy)
