@@ -120,6 +120,7 @@
 (require 'init-scroll)
 (require 'init-yasnippet)
 (require 'init-ffip)
+(require 'init-octave)
 
 (require 'init-dash)
 (require 'init-ledger)
