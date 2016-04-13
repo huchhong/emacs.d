@@ -176,7 +176,6 @@
 ;; show a text mode buffer after emacs startup
 ;;----------------------------------------------------------------------------
 (setq initial-scratch-message "")
-(setq initial-major-mode 'text-mode)
 
 (add-hook 'after-init-hook
           (lambda ()
