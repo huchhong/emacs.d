@@ -114,7 +114,6 @@
 
 (require 'init-misc)
 
-(require 'init-helm)
 (require 'init-semantic)
 (require 'init-ggtags)
 (require 'init-scroll)
